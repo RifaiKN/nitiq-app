@@ -111,7 +111,7 @@ def landing_page():
 
     st.markdown("""
     ### Formulir Evaluasi
-    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    https://forms.gle/KVGmUKwfFyvVG6ETA
     
     ### Cara Menggunakan Aplikasi
     1. **Daftar Motif**: Lihat dan pelajari berbagai motif batik yang tersedia.
@@ -165,7 +165,7 @@ def daftar_motif():
     ### Formulir Evaluasi
     st.markdown("""
     ### Formulir Evaluasi
-    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    https://forms.gle/KVGmUKwfFyvVG6ETA
     """)
     
     st.write("---")
@@ -241,7 +241,7 @@ def prediksi_motif():
 
     st.markdown("""
     ### Formulir Evaluasi
-    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    https://forms.gle/KVGmUKwfFyvVG6ETA
     """)
     
     st.write("---")
