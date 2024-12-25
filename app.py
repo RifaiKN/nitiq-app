@@ -110,6 +110,9 @@ def landing_page():
     st.write("Selamat datang di Aplikasi Pengenalan Motif Batik Nitik \"NITIQ\". Berikut adalah tutorial singkat untuk menggunakan aplikasi ini:")
 
     st.markdown("""
+    ### Formulir Evaluasi
+    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    
     ### Cara Menggunakan Aplikasi
     1. **Daftar Motif**: Lihat dan pelajari berbagai motif batik yang tersedia.
     2. **Prediksi Motif**: Unggah gambar batik Anda dan aplikasi akan mengklasifikasikannya ke dalam salah satu motif yang telah tersedia.
@@ -159,7 +162,12 @@ def daftar_motif():
             navigate("Prediksi Motif")
             
     
-
+    ### Formulir Evaluasi
+    st.markdown("""
+    ### Formulir Evaluasi
+    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    """)
+    
     st.write("---")
 
     # Pagination constants
@@ -231,6 +239,11 @@ def prediksi_motif():
         if st.button("Daftar Motif"):
             navigate("Daftar Motif")
 
+    st.markdown("""
+    ### Formulir Evaluasi
+    https://drive.google.com/drive/folders/100dpUbJq0IXWiLqAvEcKRWhXmtjQXuFR?usp=drive_link
+    """)
+    
     st.write("---")
     st.write("### Prediksi Motif Batik Nitikmu Sekarang Juga!")
 
