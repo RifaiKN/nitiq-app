@@ -152,6 +152,12 @@ def daftar_motif():
     display_logo()
     st.title("Daftar Motif Batik")
 
+    ### Formulir Evaluasi
+    st.markdown("""
+    ### Formulir Evaluasi
+    https://forms.gle/KVGmUKwfFyvVG6ETA
+    """)
+    
     # Navigation button
     col1, col2 = st.columns(2)
     with col1:
@@ -161,13 +167,6 @@ def daftar_motif():
         if st.button("Prediksi Motif", key='nav_prediksi_motif'):
             navigate("Prediksi Motif")
             
-    
-    ### Formulir Evaluasi
-    st.markdown("""
-    ### Formulir Evaluasi
-    https://forms.gle/KVGmUKwfFyvVG6ETA
-    """)
-    
     st.write("---")
 
     # Pagination constants
@@ -231,6 +230,11 @@ def prediksi_motif():
     display_logo()
     st.title("Prediksi Motif Batik")
     
+    st.markdown("""
+    ### Formulir Evaluasi
+    https://forms.gle/KVGmUKwfFyvVG6ETA
+    """)
+    
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Halaman Utama"):
@@ -239,10 +243,7 @@ def prediksi_motif():
         if st.button("Daftar Motif"):
             navigate("Daftar Motif")
 
-    st.markdown("""
-    ### Formulir Evaluasi
-    https://forms.gle/KVGmUKwfFyvVG6ETA
-    """)
+    
     
     st.write("---")
     st.write("### Prediksi Motif Batik Nitikmu Sekarang Juga!")
