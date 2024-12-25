@@ -9,6 +9,11 @@ from io import BytesIO
 from math import ceil
 import base64
 
+st.set_page_config(
+    page_title="NITIQ - Nitik Intelligence for Quality Prediction",
+    page_icon="🔍"
+    )
+
 # Initialize session state if not already set
 if 'page' not in st.session_state:
     st.session_state['page'] = 'Landing Page'
