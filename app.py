@@ -240,8 +240,8 @@ def prediksi_motif():
         if st.button("Contoh 1 - Jayakirana"):
             example_image_path = 'example_jayakirana.jpg'
     with col2:
-        if st.button("Contoh 2 - Worawari Rumpuk"):
-            example_image_path = 'example_worawari.jpg'
+        if st.button("Contoh 2 - Kawung Nitik"):
+            example_image_path = 'example_kawungnitik.jpg'
     
     # File uploader untuk upload manual
     uploaded_file = st.file_uploader("Upload gambar", type=["jpg", "png", "jpeg"], key='file_uploader_prediksi')
