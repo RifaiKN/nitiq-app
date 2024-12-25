@@ -234,10 +234,29 @@ def prediksi_motif():
     st.write("---")
     st.write("### Prediksi Motif Batik Nitikmu Sekarang Juga!")
 
+    # Button contoh prediksi
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        if st.button("Contoh 1 - Jayakirana"):
+            example_image_path = 'example_jayakirana.jpg'
+    with col2:
+        if st.button("Contoh 2 - Worawari Rumpuk"):
+            example_image_path = 'example_worawari.jpg'
+    
+    # File uploader untuk upload manual
     uploaded_file = st.file_uploader("Upload gambar", type=["jpg", "png", "jpeg"], key='file_uploader_prediksi')
+
+    # Prioritas ke contoh jika tombol ditekan
+    if 'example_image_path' in locals():
+        uploaded_file = example_image_path
+
     if uploaded_file is not None:
         try:
-            img = Image.open(uploaded_file).convert("RGB")
+            if isinstance(uploaded_file, str):
+                img = Image.open(uploaded_file).convert("RGB")
+            else:
+                img = Image.open(uploaded_file).convert("RGB")
+            
             st.image(img, caption="Gambar yang Diunggah", width=300)
 
             # Center crop image
@@ -261,7 +280,6 @@ def prediksi_motif():
                     output = model(img_tensor)
                     probabilities = torch.nn.functional.softmax(output, dim=1)
                     predicted_class = probabilities.argmax().item()
-                    confidence = probabilities[0][predicted_class].item()
 
             predicted_motif = class_names[predicted_class]
             motif_description = motif_df[motif_df['nama'] == predicted_motif]['deskripsi'].values
@@ -273,7 +291,7 @@ def prediksi_motif():
         except Exception as e:
             st.error(f"Terjadi kesalahan saat memproses gambar: {e}")
     else:
-        st.write("Silakan unggah gambar untuk melakukan prediksi.")
+        st.write("Silakan unggah gambar untuk melakukan prediksi atau gunakan contoh prediksi di atas.")
 
 # Call the navigation handler on app load
 handle_navigation()
