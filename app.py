@@ -238,7 +238,7 @@ def prediksi_motif():
     col1, col2, col3 = st.columns(3)
     with col1:
         if st.button("Contoh 1 - Arumdalu"):
-            example_image_path = 'example_arumdalu.jpg'
+            example_image_path = 'example_arumdalu.JPG'
     with col2:
         if st.button("Contoh 2 - Kawung Nitik"):
             example_image_path = 'example_kawungnitik.jpg'
