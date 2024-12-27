@@ -107,8 +107,11 @@ def landing_page():
     display_logo()
     st.title("NITIQ")
     st.markdown("*Nitik Intelligence for Quality Prediction*")
-    st.write("Selamat datang di Aplikasi Pengenalan Motif Batik Nitik \"NITIQ\". Berikut adalah tutorial singkat untuk menggunakan aplikasi ini:")
-
+    st.write("""
+             Selamat datang di Aplikasi Pengenalan Motif Batik Nitik "NITIQ"!
+             Batik Nitik adalah salah satu warisan budaya tertua Yogyakarta yang sarat makna filosofis dalam setiap motifnya. Sejak 3 Maret 2020, Batik Tulis Nitik resmi menjadi kekayaan intelektual komunal dengan sertifikat indikasi geografis oleh Gubernur DIY, menjadikannya satu-satunya batik khas Yogyakarta yang memperoleh Hak Kekayaan Intelektual (HAKI).
+             Aplikasi ini hadir untuk memperkenalkan dan melestarikan Batik Nitik, sekaligus mendukung penelitian dan inovasi melalui teknologi pengenalan motif. Kami berharap aplikasi ini dapat menginspirasi dan memperkuat apresiasi terhadap Batik Nitik sebagai bagian penting dari warisan budaya Indonesia.  
+             """)
     st.markdown("""
     ### Formulir Evaluasi
     https://forms.gle/KVGmUKwfFyvVG6ETA
